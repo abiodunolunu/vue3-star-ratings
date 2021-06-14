@@ -12,6 +12,20 @@
     "vue3-star-ratings.d.ts",
     "src/**/*.vue"
   ],
+  "keywords": [
+    "vue-star",
+    "vue3-star",
+    "vue-rating",
+    "vue 5 star",
+    "star rating"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abiodunolunu/vue3-star-ratings"
+  },
+  "bugs": {
+    "email": "abiodunolunu@gmail.com"
+  },
   "sideEffects": false,
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
