@@ -4,6 +4,7 @@ A simple, customizable component for star ratings
 
 ## Documentation
 ***
+
 ### Features
 * Uses svg for the stars, so it can scale without quality loss
 * Customizable number of stars/ratings
@@ -12,8 +13,9 @@ A simple, customizable component for star ratings
 
 ### Installation and usage
 ***
+
 ```
-npm install vue3-star-rating --save
+npm install vue3-star-ratings --save
 ```
 You can use register it globally like this:
 ```javascript
