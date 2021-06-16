@@ -1,6 +1,7 @@
 {
   "name": "vue3-star-ratings",
   "version": "1.0.5",
+  "License": "MIT"
   "description": "",
   "main": "dist/vue3-star-ratings.ssr.js",
   "browser": "dist/vue3-star-ratings.esm.js",
