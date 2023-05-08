@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Vue3StarRatings from "./components/Vue3StarRatings.vue";
+import Vue3StarRatings from "./lib/components/Vue3StarRatings.vue";
 
 const rate = ref(2.5456789);
 </script>
