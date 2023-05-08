@@ -2,24 +2,24 @@
 import { ref } from "vue";
 import Vue3StarRatings from "./components/Vue3StarRatings.vue";
 
-const rate = ref(4.76);
+const rate = ref(2.5456789);
 </script>
 
 <template>
-  {{ rate }}
-  <Vue3StarRatings
-    v-model="rate"
-    star-color="#2e20ff"
-    :inactive-color="'#ccddaa'"
-    star-size="80"
-    :control-size="50"
-    control-color="#ff00aa"
-    :number-of-stars="8"
-    :show-control="!false"
-    :disable-click="!true"
-    :control-bg="'#bada55'"
-    :step="2"
-  />
+  <div
+    style="
+      text-align: center;
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      font-size: 40px;
+    "
+  >
+    <p>
+      {{ rate }}
+    </p>
+    <Vue3StarRatings v-model="rate" />
+  </div>
 </template>
 
 <style scoped>
