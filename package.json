@@ -1,11 +1,12 @@
 {
   "name": "vue3-star-ratings",
-  "version": "2.0.0",
+  "version": "2.0.4",
   "license": "MIT",
   "type": "module",
   "main": "./dist/vue3-star-ratings.umd.cjs",
   "module": "dist/vue3-star-ratings.js",
   "unpkg": "dist/vue3-star-ratings.iife.js",
+  "types": "./dist/vue3-star-ratings.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vue3-star-ratings.js",
@@ -27,6 +28,7 @@
     "type": "git",
     "url": "https://github.com/abiodunolunu/vue3-star-ratings"
   },
+  "homepage": "https://vue3-star-ratings.netlify.app",
   "bugs": {
     "email": "abiodunolunu@gmail.com"
   },
@@ -42,6 +44,7 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
+    "vite-plugin-css-injected-by-js": "^3.1.0",
     "vite-plugin-dts": "^2.3.0",
     "vue-tsc": "^1.4.2"
   }
