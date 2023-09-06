@@ -12,10 +12,10 @@ A simple, customizable component for star ratings
 
 ### Features
 
-- Uses svg for the stars, so it can scale without quality loss
+- SVG-based stars ensure scalable and high-quality display
 - Customizable number of stars/ratings
-- Customizable step for the rating eg _0.5 0r 0.2_
-- Customizable colors
+- Customizable icon
+- Customizable color options for active and inactive stars
 
 ### Demo
 
@@ -82,24 +82,20 @@ app.component("vue3StarRatings", Vue3StarRatings);
 app.mount("#app");
 ```
 
-**Vue3StarRatings uses v-model to sync the rating between the components and its parent :**
+**The `v-model` directive syncs the rating value between the Vue3StarRatings component and its parent:**
 
 `<vue3-star-ratings v-model="rating"/>`.
 
-You can customize the component by taking a look at the `props` table below.
+## Available Props
 
-## Props
+| Prop          | Description                                                           | Type      | Default  |
+| ------------- | --------------------------------------------------------------------- | --------- | -------- |
+| numberOfStars | Specifies the total number of stars displayed and the maximum rating  | Number    | 5        |
+| starSize      | Sets the height and width of each star, in pixels                     | Number    | 32       |
+| starColor     | Defines the color of active stars                                     | String    | #ff9800  |
+| inactiveColor | Sets the color of inactive stars                                      | String    | #333333  |
+| disableClick  | Allows you to disable the click event on the stars                    | Boolean   | false    |
+| v-model       | Syncs the rating value between the component and its parent component |
+| customIcon    | Provides an option for using a custom SVG icon for the star rating    | Component | Built-in |
 
-| Prop          | Description                                                                                       | Type             | Default |
-| ------------- | ------------------------------------------------------------------------------------------------- | ---------------- | ------- |
-| starSize      | This is the height and width of the stars in pixels                                               | String Or Number | 32      |
-| starColor     | This is the color of the stars when active                                                        | String           | #ff9800 |
-| inactiveColor | This is the color of the stars when inactive                                                      | String           | #333333 |
-| numberOfStars | This is the number of stars shown and also the totalRating rating possible                        | Number           | 5       |
-| step          | This is the increment or decrement when the control buttons are clicked                           | Number           | 0.5     |
-| controlBg     | This is the background of the control buttons                                                     | String           | #2e5090 |
-| controlColor  | This is the color of the color buttons                                                            | String           | #fff    |
-| controlSize   | This is the size of the the control buttons                                                       | String Or Number | 24      |
-| showControl   | This is the option to choose if the control buttons are being shown                               | Boolean          | true    |
-| disableClick  | This is the option to disabled click on the stars, use in conjunction with the `showControl` Prop | Boolean          | false   |
-| v-model       | Sync the rating between the component and its parent ('Where it is been used')                    |
+Customize the component by leveraging these props to meet your specific needs.
