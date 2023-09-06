@@ -96,6 +96,6 @@ app.mount("#app");
 | inactiveColor | Sets the color of inactive stars                                      | String    | #333333  |
 | disableClick  | Allows you to disable the click event on the stars                    | Boolean   | false    |
 | v-model       | Syncs the rating value between the component and its parent component |
-| customIcon    | Provides an option for using a custom SVG icon for the star rating    | Component | Built-in |
+| customSvg     | Provides an option for using a custom SVG icon for the star rating    | Component | Built-in |
 
 Customize the component by leveraging these props to meet your specific needs.
