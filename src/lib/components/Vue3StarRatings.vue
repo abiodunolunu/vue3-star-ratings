@@ -149,5 +149,6 @@ onBeforeUnmount(() => {
   width: var(--vue3StarRatingIconSize);
   aspect-ratio: 1;
   cursor: pointer;
+  display: inline-block;
 }
 </style>
