@@ -52,9 +52,10 @@ const rating = computed({
 
 function adjustRating(this: HTMLDivElement, e: MouseEvent) {
   if (props.disableClick) return;
-  const { offsetLeft, offsetWidth } = this;
+  const rect = this.getBoundingClientRect();
   const { pageX } = e;
-  const relativeX = pageX - offsetLeft;
+  const relativeX = pageX - rect.left;
+  const offsetWidth = rect.width;
 
   const numberOfStars = props.numberOfStars;
 
