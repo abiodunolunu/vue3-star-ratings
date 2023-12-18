@@ -68,8 +68,8 @@ export default defineComponent({
 ### Browser with CDN
 
 ```html
-<script src="https://unpkg.com/vue@3.0.0"></script>
-<script src="https://unpkg.com/vue3-star-ratings/dist/vue3-star-ratings.min.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue3-star-ratings"></script>
 ```
 
 ```javascript
