@@ -1,6 +1,6 @@
 {
   "name": "vue3-star-ratings",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "license": "MIT",
   "type": "module",
   "main": "./dist/vue3-star-ratings.umd.cjs",
